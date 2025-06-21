@@ -67,6 +67,7 @@ export class GameController {
       return coordinates;
    }
 
+   // move this method into the Gameboard class
    isInBounds(move) {
       const x = move.x;
       const y = move.y;
@@ -76,5 +77,10 @@ export class GameController {
       const yIsGood = (y >= 0 && y <= 2) ? true : false;
 
       return (xIsGood && yIsGood) ? true : false;
+   }
+
+   // move this method into the Gameboard class
+   doesNotCollide(move) {
+      
    }
 }
